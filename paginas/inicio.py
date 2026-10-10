@@ -2,6 +2,10 @@ import streamlit as st
 
 from src.perguntas import NIVEIS, PERGUNTAS, resposta
 
+# Exibe o banner no topo da tela
+st.image("banner.jpg", use_container_width=True)
+
+# Restante do seu código...
 st.title("Brasa & Pão - 1º trimestre de 2026")
 st.write(
     "A Dona Marta precisa decidir quatro coisas antes de abril: **cardápio**, "

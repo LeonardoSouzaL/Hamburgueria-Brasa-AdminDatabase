@@ -152,7 +152,7 @@ Q11 = """
 SELECT 
     i.PrecoUnitario,
     SUM(i.Quantidade) AS UnidadesVendidas,
-    SUM(i.Quantidade * i.PrecoUnitario) AS Faturamento Total
+    SUM(i.Quantidade * i.PrecoUnitario) AS Faturamento
 FROM ItensPedido i
 INNER JOIN Produtos pr ON pr.IdProduto = i.IdProduto
 INNER JOIN Pedidos p ON p.IdPedido = i.IdPedido
